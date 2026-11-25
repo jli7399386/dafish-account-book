@@ -1,0 +1,33 @@
+# ===== 绝对不要提交的东西 =====
+# 签名密钥：泄露 = 别人能签出和你一样签名的"官方更新"
+*.keystore
+*.jks
+*.p12
+# 签名密码（本地自己放一个，构建脚本会读）
+.kspass
+
+# ===== 构建产物 =====
+build/
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+classes/
+dex/
+
+# ===== 备份与临时文件 =====
+*.bak
+*.bak-*
+*.orig
+*.rej
+*.tmp
+*~
+._*
+
+# ===== 编辑器 / 系统 =====
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
